@@ -1,0 +1,41 @@
+.stats-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.stat-item {
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2C5545;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.25rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .stats-section {
+    padding: 2rem 0;
+  }
+
+  .stat-item {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 1.1rem;
+  }
+} 

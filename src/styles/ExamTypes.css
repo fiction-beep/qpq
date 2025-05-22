@@ -1,0 +1,67 @@
+.exam-types-section {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.exam-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.exam-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2C5545;
+  margin-bottom: 0.5rem;
+}
+
+.exam-subtitle {
+  font-size: 1.1rem;
+  color: #F4804E;
+  font-weight: 500;
+}
+
+.exam-description {
+  color: #6c757d;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.exam-card .btn-outline-primary {
+  color: #2C5545;
+  border-color: #2C5545;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.exam-card .btn-outline-primary:hover {
+  background-color: #2C5545;
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .exam-types-section {
+    padding: 3rem 0;
+  }
+
+  .exam-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .exam-title {
+    font-size: 1.3rem;
+  }
+
+  .exam-subtitle {
+    font-size: 1rem;
+  }
+} 

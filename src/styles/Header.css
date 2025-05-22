@@ -1,0 +1,97 @@
+.navbar {
+  background-color: #2C5545 !important;
+  width: 1440px;
+  height: 108px;
+  /* make it width */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-brand .brand-text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1%;
+  text-align: right;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  background-color: #F4804E !important;
+  border-color: #F4804E !important;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1%;
+  text-align: right;
+}
+
+.btn-primary:hover {
+  background-color: #e67341 !important;
+  border-color: #e67341 !important;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+} 
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.button-container .signup-btn, .button-container .login-btn {
+  width: 77px; /* Width as per the image */
+  height: 36px; /* Height as per the image */
+  border-radius: 18px; /* Makes the button oval (half of the height for perfect oval) */
+  font-size: 14px; /* Adjust font size to fit */
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button-container .signup-btn {
+  background-color: white;
+  color: #333; /* Dark text for contrast */
+  border: 1px solid #ccc; /* Light border for the "Sign Up" button */
+}
+
+.button-container .login-btn {
+  background-color: #f28c38; /* Orange color for the "Login" button */
+  color: white; /* White text for contrast */
+}
+
+.button-container .signup-btn:hover {
+  background-color: #f0f0f0; /* Slight hover effect */
+}
+
+.button-container .login-btn:hover {
+  background-color: #e07b30; /* Darker orange on hover */
+}

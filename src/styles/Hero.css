@@ -1,0 +1,99 @@
+.hero-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 2rem 0;
+}
+
+.hero-title {
+  font-size: 55px;
+  font-weight: 600;
+  color: #2C5545;
+  margin-bottom: 1.5rem;
+  line-height: 65px;
+  letter-spacing: -2px;
+  font-family: 'Montserrat';
+  color: #121212;
+  
+}
+
+.hero-description {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 26px;
+  font-family: 'Montserrat';
+  color: #121212;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+}
+
+.hero-buttons .btn-primary {
+  background-color: #F4804E;
+  border-color: #F4804E;
+}
+
+.hero-buttons .btn-outline-dark {
+  color: #2C5545;
+  border-color: #2C5545;
+}
+
+.hero-buttons .btn-outline-dark:hover {
+  background-color: #2C5545;
+  color: white;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-buttons .btn {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .hero-buttons .btn:first-child {
+    margin-right: 0;
+  }
+} 
