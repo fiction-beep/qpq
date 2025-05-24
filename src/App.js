@@ -12,6 +12,7 @@ import WhyDeveloped from './components/WhyDeveloped';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
+import Reviews from './components/Reviews';
 
 // Home component to wrap the main page content
 const Home = () => (
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
         <Footer />
       </div>
