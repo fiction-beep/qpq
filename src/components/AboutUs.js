@@ -23,7 +23,6 @@ const AboutUs = () => {
               <img src={doctorsImage} alt="Medical Team" />
             </div>
           </div>
-          <button className="contact-button">Contact Us</button>
         </div>
 
         <div className="about-us-sections">
