@@ -13,34 +13,49 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import Reviews from './components/Reviews';
+import Pricing from './components/Pricing';
+import GPQuestOffer from './components/GPQuestOffer';
 
 // Home component to wrap the main page content
 const Home = () => (
   <>
     <Hero />
     <Stats />
-    <TrustedChoice />
     <ExamTypes />
+    <GPQuestOffer />
+    <TrustedChoice />
     <WhyChoose />
     <WhyDeveloped />
     <FAQ />
   </>
 );
 
-function App() {
+// PricingPage component to wrap pricing content with common sections
+const PricingPage = () => (
+  <>
+    <Pricing />
+    <TrustedChoice />
+    <FAQ />
+  </>
+);
+
+const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/reviews" element={<Reviews />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/pricing" element={<PricingPage />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
   );
-}
+};
 
 export default App;

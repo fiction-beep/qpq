@@ -1,0 +1,67 @@
+.gpquest-offer-section {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.gpquest-offer-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2C5545;
+}
+
+.gpquest-offer-section .description {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.offer-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.offer-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2C5545;
+  margin-bottom: 1.5rem;
+  white-space: pre-line;
+}
+
+.explore-btn {
+  color: #2C5545;
+  border-color: #2C5545;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+}
+
+.explore-btn:hover {
+  background-color: #2C5545;
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .gpquest-offer-section {
+    padding: 3rem 0;
+  }
+
+  .gpquest-offer-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offer-title {
+    font-size: 1.5rem;
+  }
+} 

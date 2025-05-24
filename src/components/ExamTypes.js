@@ -1,28 +1,35 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import '../styles/ExamTypes.css';
 
 const ExamTypes = () => {
+  const navigate = useNavigate();
+
   const examTypes = [
     {
       title: 'GP Entry Exams',
       subtitle: 'Clinical Problem Solving Test (CPST)',
       description: 'Comprehensive preparation materials and practice tests for the CPST component of GP entry exams.',
-      buttonText: 'Explore More'
+      buttonText: 'Explore Plans'
     },
     {
       title: 'MICGP Exams',
       subtitle: 'Clinical Knowledge Test (CKT)',
       description: 'Expert-curated question bank and study materials for the MICGP Clinical Knowledge Test.',
-      buttonText: 'Explore More'
+      buttonText: 'Explore Plans'
     },
     {
       title: 'GP Interview Course',
       subtitle: 'Get ready for your GP Interview',
       description: 'All-in-one resource course for entry into GP training in Ireland.',
-      buttonText: 'Learn More'
+      buttonText: 'Explore Plans'
     }
   ];
+
+  const handleExplore = () => {
+    navigate('/pricing');
+  };
 
   return (
     <section className="exam-types-section">
@@ -37,7 +44,11 @@ const ExamTypes = () => {
                   <Card.Text className="exam-description">
                     {exam.description}
                   </Card.Text>
-                  <Button variant="outline-primary" className="mt-3">
+                  <Button 
+                    variant="outline-primary" 
+                    className="mt-3"
+                    onClick={handleExplore}
+                  >
                     {exam.buttonText}
                   </Button>
                 </Card.Body>
