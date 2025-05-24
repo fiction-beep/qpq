@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../styles/Hero.css';
 import girlImage from '../assets/girl-image 1.png';
-
 const Hero = () => {
   return (
     <section className="hero-section">
