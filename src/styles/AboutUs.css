@@ -1,0 +1,138 @@
+.about-us-container {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.about-us-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.welcome-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+.main-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  position: relative;
+}
+
+.main-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #F5A623;
+}
+
+.contact-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #00A99D;
+  border: 1px solid #00A99D;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.contact-button:hover {
+  background-color: #00A99D;
+  color: #FFFFFF;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-us-description {
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-us-sections {
+  text-align: left;
+}
+
+.content-section {
+  margin-bottom: 10px; /* Reduced from 20px to 10px for tighter spacing between sections */
+}
+
+.content-section-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Reduced from 10px to 5px for less space below the heading */
+}
+
+.section-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-us-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-button {
+    margin-top: 20px;
+  }
+
+  .about-us-image {
+    max-width: 100%;
+  }
+}
